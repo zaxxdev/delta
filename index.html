@@ -1,1 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator Delty</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">Δ Kalkulator Delty Δ</h2>
+        <span class="info">Program wykorzystuje wzór na delte Δ = b²- 4ac oraz wylicza na podstawie pierwiastku z delty punkty x₁ oraz x₂</span>
+        <form id="deltaForm">
+            <input type="number" id="inputA" placeholder="A" required>
+            <input type="number" id="inputB" placeholder="B" required>
+            <input type="number" id="inputC" placeholder="C" required>
+            <div id="result"></div>
+            <div class="buttons-container">
+            <input type="button" value="Oblicz" onclick="calculateDelta()">
+            <input id="button-secondary" type="button" value="Resetuj" onclick="resetForm()">
+        </div>
+        </form>
+    </div>
 
+    <script src="script.js"></script>
+</body>
+</html>
